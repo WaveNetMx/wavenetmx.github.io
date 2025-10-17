@@ -1,62 +1,201 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sitio en Desarrollo |WaveNet MX</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            background: #f5f6fa;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-        }
-        .container-main {
-            flex: 1 0 auto;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            min-height: 80vh;
-        }
-        .btn-custom {
-            background: #2455fc;
-            color: #fff;
-            border-radius: 1.5rem;
-            font-weight: 600;
-            padding: 0.75rem 2rem;
-            margin-top: 2rem;
-            transition: background .2s;
-        }
-        .btn-custom:hover {
-            background: #1a3eaa;
-            color: #fff;
-        }
-        footer {
-            flex-shrink: 0;
-            padding: 1rem 0;
-            text-align: center;
-            font-size: 0.9rem;
-            color: #555;
-            background: #e8eaf6;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wave Net | Internet Residencial</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/estilos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- Tipografía de marca -->
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Antique+B1:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Shippori Antique B1', Arial, sans-serif; }
+    .bg-azul { background-color: #17215c !important; color: #fff; }
+    .text-verde { color: #19e083; }
+    .text-azul { color: #396bea; }
+    .btn-wisp { background: #396bea; color: #fff; border-radius: 1.5rem; font-weight: 600; }
+    .btn-wisp:hover { background: #17215c; color: #fff; }
+    .card-paquete { border-radius: 1.2rem; box-shadow: 0 4px 16px #17215c10; }
+    .footer-link { font-size: 0.96rem; }
+  </style>
 </head>
 <body>
-    <div class="container-main">
-        <h1 class="display-5 mb-4 fw-bold text-center">Sitio en Desarrollo</h1>
-        <p class="lead text-center mb-3">
-            Este sitio web se encuentra en construcción.<br>
-            Para información regulatoria y legal consulte el siguiente documento:
-        </p>
-        <a class="btn btn-custom shadow" href="docs/titulo-autorizacion-IFT.pdf" download>
-            Descargar Título de Autorización IFT (PDF)
-        </a>
+<!-- NAVBAR / HEADER -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-azul fixed-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">
+      <img src="assets/wn_blanco.png" height="40" alt="Wave Net logo" class="me-2">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Abrir menú de navegación">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="#planes">Planes</a></li>
+        <li class="nav-item"><a class="nav-link" href="#cobertura">Cobertura</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contrata">Contrata</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://wavenet.uisp.com/crm/client-zone" target="_blank" rel="noopener noreferrer">Portal clientes</a></li>
+      </ul>
+      <a href="https://wa.me/527531168969" target="_blank" rel="noopener noreferrer" class="btn btn-wisp ms-3 d-none d-lg-block">
+        WhatsApp
+      </a>
     </div>
-    <footer>
-        &copy; 2025 WaveNet &middot; RFC: WNE2502265F0 <br>
-        Cumpliendo las disposiciones del Instituto Federal de Telecomunicaciones (IFT)
-    </footer>
+  </div>
+<!-- NAVBAR ENDS -->
+</nav>
+<div id="avisos-servicio" class="container d-none mt-3"></div>
+
+<!-- HERO -->
+<section class="py-5 bg-light text-center" style="padding-top:6rem !important;">
+  <div class="container">
+    <img src="assets/wn_c2.png" alt="Wave Net logo" style="max-width:120px;" class="mb-3">
+    <p class="lead mb-4">Internet residencial rápido, confiable y local.<br>¡Conéctate hoy y disfruta el mejor servicio WISP de tu zona!</p>
+    <a href="https://wa.me/527531168969" target="_blank" rel="noopener noreferrer" class="btn btn-wisp btn-lg shadow">Contratar por WhatsApp</a>
+  </div>
+</section>
+
+<!-- BENEFICIOS -->
+<section class="py-4 bg-white text-center">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-12 col-md-4"><div class="shadow-sm py-4 h-100 border rounded-4"><span class="fs-2 text-verde mb-2">✓</span><br>Sin contratos forzosos</div></div>
+      <div class="col-12 col-md-4"><div class="shadow-sm py-4 h-100 border rounded-4"><span class="fs-2 text-verde mb-2">⚡</span><br>Instalación rápida</div></div>
+      <div class="col-12 col-md-4"><div class="shadow-sm py-4 h-100 border rounded-4"><span class="fs-2 text-verde mb-2">🤝</span><br>Soporte local</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PLANES / PAQUETES -->
+<section id="planes" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="mb-4 text-center fw-bold">Planes y Paquetes</h2>
+    <div id="modulo-planes"></div>
+    <p class="text-center small text-muted mt-3">Precios en MXN. IVA incluido. Sujetos a factibilidad y disponibilidad técnica.</p>
+    <p class="text-center small text-muted">Cargos de instalación y/o equipo, en su caso, se informarán previo a la contratación.</p>
+  </div>
+</section>
+
+<!-- COMO CONTRATAR -->
+<section id="contrata" class="py-5 bg-white">
+  <div class="container">
+    <h2 class="mb-4 text-center fw-bold">¿Cómo contratar?</h2>
+    <div class="row justify-content-center g-4">
+      <div class="col-12 col-md-4">
+        <div class="border rounded-4 shadow-sm p-4 h-100 text-center">
+          <span class="fs-1 text-verde">1</span>
+          <h5 class="fw-bold mt-3">Elige tu plan</h5>
+          <p class="mb-0">Selecciona el paquete que más se adapte a tus necesidades.</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="border rounded-4 shadow-sm p-4 h-100 text-center">
+          <span class="fs-1 text-verde">2</span>
+          <h5 class="fw-bold mt-3">Contáctanos</h5>
+          <p class="mb-0">Escríbenos por WhatsApp, Facebook, correo o llámanos.</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="border rounded-4 shadow-sm p-4 h-100 text-center">
+          <span class="fs-1 text-verde">3</span>
+          <h5 class="fw-bold mt-3">Firma tu contrato</h5>
+          <p class="mb-0">Lee y firma el contrato de adhesión para los servicios que deseas</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="border rounded-4 shadow-sm p-4 h-100 text-center">
+          <span class="fs-1 text-verde">4</span>
+          <h5 class="fw-bold mt-3">Recibe tu instalación</h5>
+          <p class="mb-0">Un técnico irá a tu domicilio para instalar y activar tu servicio.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COBERTURA -->
+<section id="cobertura" class="py-5 bg-light">
+  <div class="container text-center">
+    <h2 class="mb-4 fw-bold">Cobertura</h2>
+    <div class="ratio ratio-16x9 rounded-4 shadow mb-3" style="max-width: 700px; margin: auto;">
+      <iframe src="https://www.google.com/maps/d/embed?mid=1_O0MbcXqkgkih2lXzM73IaxUL8RIqj0&ehbc=2E312F" width="640" height="480" loading="lazy" allowfullscreen></iframe>
+    </div>
+    <p class="mt-2">Consulta tu domicilio dentro de la zona resaltada.<br>Actualizamos la cobertura periódicamente.</p>
+    <p class="small text-muted mb-2">La prestación del servicio dentro de la cobertura está sujeta a factibilidad técnica.</p>
+    <p class="small text-muted">Tip: abre el mapa en pantalla completa y usa la lupa para ingresar tu dirección.</p>
+    <a class="btn btn-wisp btn-sm mt-2" href="https://www.google.com/maps/d/u/0/viewer?mid=1_O0MbcXqkgkih2lXzM73IaxUL8RIqj0&hl=es" target="_blank" rel="noopener noreferrer">Abrir mapa de cobertura</a>
+  </div>
+</section>
+
+<section class="py-3 bg-light">
+  <div class="container">
+    <p class="small mb-0">
+      En cumplimiento a los Lineamientos de Calidad del Servicio Fijo, el público en general puede consultar en nuestros centros de atención y en este portal la información relativa a los <strong>sistemas de atención a usuarios</strong>. Esta información también se proporciona al momento de la contratación del servicio.
+    </p>
+  </div>
+</section>
+<!-- FOOTER LEGAL Y CONTACTO -->
+<footer class="pt-4 pb-2 bg-azul text-light">
+  <div id="modulo-footer"></div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Módulos Dinámicos -->
+<script>
+  // Cargar módulos externos de HTML
+  async function cargarModulo(id, url) {
+    const resp = await fetch(url);
+    const html = await resp.text();
+    document.getElementById(id).innerHTML = html;
+  }
+  cargarModulo('modulo-footer', 'modulos/footer-legal.html');
+</script>
+<script>
+(async () => {
+  try {
+    const r = await fetch('modulos/avisos.html', { cache: 'no-store' });
+    if (r.ok) {
+      const html = (await r.text()).trim();
+      if (html) {
+        const box = document.getElementById('avisos-servicio');
+        if (box) {
+          box.classList.remove('d-none');
+          box.innerHTML = `<div class="alert alert-warning rounded-4 mb-0"><h6 class="mb-2">Avisos de servicio</h6>${html}</div>`;
+        }
+      }
+    }
+  } catch (e) { /* sin acción: si no existe el archivo, el bloque permanece oculto */ }
+})();
+</script>
+<script>
+  async function cargarPlanesJSON(url, divDestino) {
+    const resp = await fetch(url);
+    const planes = await resp.json();
+    let html = '<div class="row g-4 justify-content-center">';
+    planes.forEach(plan => {
+      html += `
+        <div class="col-12 col-md-4">
+            <div class="card card-paquete h-100 shadow-sm border-0">
+                <div class="card-body text-center">
+                    <div class="mb-2">
+                        <i class="bi bi-${plan.icon} fs-1 text-azul"></i>
+                    </div>
+                    <h4 class="fw-bold mb-2">${plan.nombre}</h4>
+                    <div class="display-6 fw-bold mb-2">$${plan.precio} <span class="fs-6 fw-normal">MXN / mes</span></div>
+                    <p class="mb-2">${plan.velocidad}<br><span class="small">${plan.descripcion}</span></p>
+                    <div class="mb-2">Folio IFT: ${plan.folio_ift}</div>
+                    <a href="https://wa.me/527531168969" class="btn btn-wisp btn-sm mt-2" target="_blank">Contratar</a>
+                </div>
+            </div>
+        </div>
+        `;
+    });
+    html += '</div>';
+    document.getElementById(divDestino).innerHTML = html;
+  }
+  cargarPlanesJSON('modulos/planes.json', 'modulo-planes');
+</script>
+</script>
 </body>
 </html>
