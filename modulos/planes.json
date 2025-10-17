@@ -1,0 +1,34 @@
+[
+  {
+    "nombre": "Brisa 5",
+    "precio": 499,
+    "velocidad": "5 Mbps",
+    "descripcion": "Ideal para navegar por internet, redes sociales y uso básico en casa.",
+    "folio_ift": "Por asignar",
+    "icon": "wind"
+  },
+  {
+    "nombre": "Ola 10",
+    "precio": 799,
+    "velocidad": "10 Mbps",
+    "descripcion": "Perfecto para streaming, videollamadas y dispositivos múltiples en el hogar.",
+    "folio_ift": "Por asignar",
+    "icon": "water"
+  },
+  {
+    "nombre": "Marea 15",
+    "precio": 949,
+    "velocidad": "15 Mbps",
+    "descripcion": "Pensado para familias conectadas y trabajo desde casa con mayor demanda.",
+    "folio_ift": "Por asignar",
+    "icon": "sunrise"
+  },
+  {
+    "nombre": "Tsunami 20",
+    "precio": 1099,
+    "velocidad": "20 Mbps",
+    "descripcion": "Conéctate a máxima velocidad, ideal para gamers, streaming y trabajo intensivo.",
+    "folio_ift": "Por asignar",
+    "icon": "tsunami"
+  }
+]
