@@ -12,19 +12,27 @@
                     <li><a href="assets/legal/contrato-adhesion.pdf" class="footer-link text-light" target="_blank"><i class="bi bi-file-earmark-text"></i> Contrato de Adhesión</a></li>
                     <!-- Versión en audio del contrato de adhesión -->
                     <li class="mt-1">
-                        <span class="d-block small fw-semibold">
+                        <button
+                            class="btn btn-link p-0 footer-link text-light d-block small fw-semibold text-start"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#audioContratoCollapse"
+                            aria-expanded="false"
+                            aria-controls="audioContratoCollapse">
                             <i class="bi bi-volume-up-fill"></i> Versión en audio del Contrato de Adhesión
-                        </span>
-                        <audio
+                        </button>
+                        <div class="collapse mt-1" id="audioContratoCollapse">
+                            <audio
                                 controls
-                                class="w-100 mt-1"
+                                class="w-100"
                                 preload="none"
                                 aria-label="Reproducir versión en audio del Contrato de Adhesión">
-                            <source src="assets/legal/audioContrato.mp3" type="audio/mpeg">
-                            Tu navegador no soporta el elemento de audio.
-                            Puedes descargar el archivo
-                            <a href="assets/legal/audioContrato.mp3">aquí</a>.
-                        </audio>
+                                <source src="assets/legal/audioContrato.mp3" type="audio/mpeg">
+                                Tu navegador no soporta el elemento de audio.
+                                Puedes descargar el archivo
+                                <a href="assets/legal/audioContrato.mp3">aquí</a>.
+                            </audio>
+                        </div>
                     </li>
                     <li><a href="assets/legal/aprobacion-contrato-adhesion.pdf" class="footer-link text-light" target="_blank"><i class="bi bi-file-earmark-text"></i> Aprobación PROFECO de Contrato de Adhesión</a></li>
                     <li><a href="assets/legal/titulo-autorizacion-ift.pdf" class="footer-link text-light" target="_blank"><i class="bi bi-award"></i> Título de Autorización IFT</a></li>
