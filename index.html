@@ -37,7 +37,7 @@
         <li class="nav-item"><a class="nav-link" href="#contrata">Contrata</a></li>
         <li class="nav-item"><a class="nav-link" href="https://wavenet.uisp.com/crm/client-zone" target="_blank" rel="noopener noreferrer">Portal clientes</a></li>
       </ul>
-      <a href="https://wa.me/527531168969?text=Hola%20WaveNet%20%F0%9F%91%8B%20Me%20interesa%20el%20internet%20para%20Condominio%20Vancouver.%20%C2%BFMe%20comparten%20los%20planes%20promo%20y%20el%20link%20de%20pre-registro%3F%20%E2%9C%85" target="_blank" rel="noopener noreferrer" class="btn btn-wisp ms-3 d-none d-lg-block">
+      <a href="#" id="wa-general-navbar" target="_blank" rel="noopener noreferrer" class="btn btn-wisp ms-3 d-none d-lg-block">
         WhatsApp
       </a>
     </div>
@@ -51,7 +51,7 @@
   <div class="container">
     <img src="assets/wn_c2.png" alt="Wave Net logo" style="max-width:120px;" class="mb-3">
     <p class="lead mb-4">Internet residencial rápido, confiable y local.<br>¡Conéctate hoy y disfruta el mejor servicio WISP de tu zona!</p>
-    <a href="https://wa.me/527531168969?text=Hola%20WaveNet%20%F0%9F%91%8B%20Me%20interesa%20el%20internet%20para%20Condominio%20Vancouver.%20%C2%BFMe%20comparten%20los%20planes%20promo%20y%20el%20link%20de%20pre-registro%3F%20%E2%9C%85" target="_blank" rel="noopener noreferrer" class="btn btn-wisp btn-lg shadow">Contratar por WhatsApp</a>
+    <a href="#" id="wa-general-hero" target="_blank" rel="noopener noreferrer" class="btn btn-wisp btn-lg shadow">Contratar por WhatsApp</a>
   </div>
 </section>
 
@@ -141,6 +141,20 @@
 
 <!-- Scripts -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  // WhatsApp links (runtime encoding to avoid emoji charset issues)
+  (function () {
+    const phone = '527531168969';
+    const msgGeneral = `Hola WaveNet \u{1F44B} Me interesa el internet para Condominio Vancouver. ¿Me comparten los planes promo y el link de pre-registro? \u{2705}`;
+    const urlGeneral = `https://wa.me/${phone}?text=${encodeURIComponent(msgGeneral)}`;
+
+    const navBtn = document.getElementById('wa-general-navbar');
+    if (navBtn) navBtn.setAttribute('href', urlGeneral);
+
+    const heroBtn = document.getElementById('wa-general-hero');
+    if (heroBtn) heroBtn.setAttribute('href', urlGeneral);
+  })();
+</script>
 <!-- Módulos Dinámicos -->
 <script>
   // Cargar módulos externos de HTML
@@ -185,7 +199,7 @@
                     <div class="display-6 fw-bold mb-2">$${plan.precio} <span class="fs-6 fw-normal">MXN / mes</span></div>
                     <p class="mb-2">${plan.velocidad}<br><span class="small">${plan.descripcion}</span></p>
                     <div class="mb-2">Folio IFT: ${plan.folio_ift}</div>
-                    <a href="https://wa.me/527531168969?text=${encodeURIComponent(`Hola WaveNet 👋 Me interesa el plan ${plan.nombre} Promo para Vancouver. ¿Sigue disponible la promo y me comparten el pre-registro?`)}" class="btn btn-wisp btn-sm mt-2" target="_blank" rel="noopener noreferrer">Contratar</a>
+                    <a href="https://wa.me/527531168969?text=${encodeURIComponent(`Hola WaveNet \\u{1F44B} Me interesa el plan ${plan.nombre} Promo para Vancouver. ¿Sigue disponible la promo y me comparten el pre-registro?`)}" class="btn btn-wisp btn-sm mt-2" target="_blank" rel="noopener noreferrer">Contratar</a>
                 </div>
             </div>
         </div>
