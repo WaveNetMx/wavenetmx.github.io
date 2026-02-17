@@ -2,9 +2,10 @@
   {
     "nombre": "Brisa 5",
     "precio": 499,
-    "velocidad": "5 Mbps",
+    "velocidad_bajada": "5 Mbps",
+    "velocidad_subida": "2.5 Mbps",
     "precio_promo": 440,
-    "velocidad_promo": "7 Mbps",
+    "velocidad_bajada_promo": "7 Mbps",
     "descripcion": "Ideal para navegar por internet, redes sociales y uso básico en casa.",
     "folio_ift": "2348356",
     "icon": "wind"
@@ -12,9 +13,10 @@
   {
     "nombre": "Ola 10",
     "precio": 799,
-    "velocidad": "10 Mbps",
+    "velocidad_bajada": "10 Mbps",
+    "velocidad_subida": "5 Mbps",
     "precio_promo": 699,
-    "velocidad_promo": "13 Mbps",
+    "velocidad_bajada_promo": "13 Mbps",
     "descripcion": "Perfecto para streaming, videollamadas y dispositivos múltiples en el hogar.",
     "folio_ift": "2348430",
     "icon": "water"
@@ -22,9 +24,10 @@
   {
     "nombre": "Marea 15",
     "precio": 949,
-    "velocidad": "15 Mbps",
+    "velocidad_bajada": "15 Mbps",
+    "velocidad_subida": "7.5 Mbps",
     "precio_promo": 829,
-    "velocidad_promo": "20 Mbps",
+    "velocidad_bajada_promo": "20 Mbps",
     "descripcion": "Pensado para familias conectadas y trabajo desde casa con mayor demanda.",
     "folio_ift": "2348456",
     "icon": "sunrise"
@@ -32,10 +35,11 @@
   {
     "nombre": "Tsunami 20",
     "precio": 1099,
-    "velocidad": "20 Mbps",
+    "velocidad_bajada": "20 Mbps",
+    "velocidad_subida": "10 Mbps",
     "precio_promo": 949,
-    "velocidad_promo": "30 Mbps",
-    "descripcion": "Conéctate a máxima velocidad, ideal para gamers, streaming y trabajo intensivo.",
+    "velocidad_bajada_promo": "30 Mbps",
+    "descripcion": "Conéctate a máxima velocidad_bajada, ideal para gamers, streaming y trabajo intensivo.",
     "folio_ift": "2348904",
     "icon": "tsunami"
   }
